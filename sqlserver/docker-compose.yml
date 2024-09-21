@@ -11,6 +11,7 @@ services:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Mssql2020$
       - MSSQL_PID=Developer
+    user: "0:0"
     volumes:
       - ~/.databases/sqlserver/data:/var/opt/mssql/data
       - ~/.databases/sqlserver/log:/var/opt/mssql/log
